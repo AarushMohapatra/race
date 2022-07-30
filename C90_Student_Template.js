@@ -66,42 +66,74 @@ function my_keydown(e)
 	console.log(keyPressed);
 		if(keyPressed == '38')
 		{
-			car1.up();
+			up();
 			console.log("up arrow key");
 		}
 		if(keyPressed == '40')
 		{
-			car1.down();
+			down();
 			console.log("down arrow key");
 		}
 		if(keyPressed == '37')
 		{
-			car1.left();
+			left();
 			console.log("left arrow key");
 		}
 		if(keyPressed == '39')
 		{
-			car1.right();
+			right();
 			console.log("right arrow key");
 		}
 		if(keyPressed == '87')
 		{
-			car2_up();
+			up();
 			console.log("key w");
 		}
 		if(keyPressed == '83')
 		{
-			car2_down();
+			down();
 			console.log("key s");
 		}
 		if(keyPressed == '65')
 		{
-			car2_left();
+			left();
 			console.log("key a");
 		}
 		if(keyPressed == '68')
 		{
-			car2_right();
+			right();
 			console.log("key d");
 		}
+}
+function up(){
+    if(rover_y >=0){
+        rover_y = rover_y - 10;
+        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+        uploadBackground();
+        uploadrover();
+    }
+}
+function down(){
+    if(rover_y <=500){
+        rover_y = rover_y + 10;
+        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+        uploadBackground();
+        uploadrover();
+    }
+}
+function left(){
+    if(rover_x >=0){
+        rover_x = rover_x - 10;
+        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+        uploadBackground();
+        uploadrover();
+    }
+}
+function right(){
+    if(rover_x <=700){
+        rover_x = rover_x + 10;
+        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+        uploadBackground();
+        uploadrover();
+    }
 }
