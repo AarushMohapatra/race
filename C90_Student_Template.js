@@ -118,7 +118,7 @@ function down(){
         car1_y = car1_y + 10;
         console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
-        uploadrover();
+        uploadcar1();
     }
 }
 function left(){
