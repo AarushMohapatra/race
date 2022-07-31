@@ -106,34 +106,38 @@ function my_keydown(e)
 		}
 }
 function up(){
-    if(rover_y >=0){
-        rover_y = rover_y - 10;
-        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+    if(car1_y >=0){
+        car1_y = car1_y - 10;
+        console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
-        uploadrover();
+        uploadcar1();
     }
 }
 function down(){
-    if(rover_y <=500){
-        rover_y = rover_y + 10;
-        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+    if(car1_y <=500){
+        car1_y = car1_y + 10;
+        console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
         uploadrover();
     }
 }
 function left(){
-    if(rover_x >=0){
-        rover_x = rover_x - 10;
-        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+    if(car1_x >=0){
+        car1_x = car1_x - 10;
+        console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
-        uploadrover();
+        uploadcar1();
     }
 }
 function right(){
-    if(rover_x <=700){
-        rover_x = rover_x + 10;
-        console.log("Whenn down arrow is pressed, x = " + rover_x + " | y = " + rover_y);
+    if(car1_x <=700){
+        car1_x = car1_x + 10;
+        console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
-        uploadrover();
+        uploadcar1();
     }
+}
+if (car1_x > 700){
+	console.log("car1 won");
+	document.getElementById('game_status').innerHTML = "car 1 won!!!";
 }
