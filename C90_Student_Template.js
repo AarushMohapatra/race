@@ -111,6 +111,7 @@ function up(){
         console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
         uploadcar1();
+	uploadcar2();
     }
 }
 function down(){
@@ -119,6 +120,7 @@ function down(){
         console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
         uploadcar1();
+	uploadcar2();
     }
 }
 function left(){
@@ -127,6 +129,7 @@ function left(){
         console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
         uploadcar1();
+	uploadcar2();
     }
 }
 function right(){
@@ -135,6 +138,7 @@ function right(){
         console.log("Whenn down arrow is pressed, x = " + car1_x + " | y = " + car1_y);
         uploadBackground();
         uploadcar1();
+	uploadcar2();
     }
 }
 if (car1_x > 700){
